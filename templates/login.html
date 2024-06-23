@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 font-sans antialiased">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4 text-white flex justify-between items-center">
+      <h1 class="text-3xl font-bold">AI Blog Generator</h1>
+      <div>
+        <a href="login" class="text-white hover:underline mx-2">Login</a>
+        <a href="signup" class="text-white hover:underline mx-2">Signup</a>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="flex items-center justify-center h-screen">
+      <div class="bg-white p-8 shadow-lg rounded-lg max-w-md w-full">
+        <!-- Login form -->
+        <form class="space-y-6" action="" method="POST">
+          {% csrf_token %} {% if error_message %}
+          <div class="text-center text-red-500 mb-4">
+            <h2>{{ error_message }}</h2>
+          </div>
+          {% endif %}
+
+          <h2 class="text-2xl font-bold text-center text-gray-700 mb-6">
+            Login
+          </h2>
+
+          <div>
+            <label
+              for="username"
+              class="block mb-2 text-sm font-medium text-gray-700"
+              >Username</label
+            >
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Enter your username..."
+              class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+            />
+          </div>
+
+          <div>
+            <label
+              for="password"
+              class="block mb-2 text-sm font-medium text-gray-700"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password..."
+              class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            Login
+          </button>
+        </form>
+
+        <p class="text-center text-gray-600 mt-4">
+          Don't have an account?
+          <a href="signup" class="text-blue-600 hover:underline">Signup</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 font-sans antialiased">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4 text-white flex justify-between items-center">
+      <h1 class="text-3xl font-bold">AI Blog Generator</h1>
+      <div>
+        <a href="login" class="text-white hover:underline mx-2">Login</a>
+        <a href="signup" class="text-white hover:underline mx-2">Signup</a>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="flex items-center justify-center h-screen">
+      <div class="bg-white p-8 shadow-lg rounded-lg max-w-md w-full">
+        <!-- Login form -->
+        <form class="space-y-6" action="" method="POST">
+          {% csrf_token %} {% if error_message %}
+          <div class="text-center text-red-500 mb-4">
+            <h2>{{ error_message }}</h2>
+          </div>
+          {% endif %}
+
+          <h2 class="text-2xl font-bold text-center text-gray-700 mb-6">
+            Login
+          </h2>
+
+          <div>
+            <label
+              for="username"
+              class="block mb-2 text-sm font-medium text-gray-700"
+              >Username</label
+            >
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Enter your username..."
+              class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+            />
+          </div>
+
+          <div>
+            <label
+              for="password"
+              class="block mb-2 text-sm font-medium text-gray-700"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password..."
+              class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            Login
+          </button>
+        </form>
+
+        <p class="text-center text-gray-600 mt-4">
+          Don't have an account?
+          <a href="signup" class="text-blue-600 hover:underline">Signup</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
